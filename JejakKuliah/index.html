@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jejak Kuliah - Presentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="particles-bg" id="particles"></div>
+    
+    <div class="slide-container">
+        <!-- Slide 1: Cover -->
+        <div class="slide active" data-slide="0">
+            <div class="cover-slide">
+                <div class="logo-container">
+                    <div class="app-icon">
+                        <svg width="100" height="100" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="80" height="80" rx="16" fill="#1D7B81"/>
+                            <path d="M25 30C25 27.7909 26.7909 26 29 26H51C53.2091 26 55 27.7909 55 30V50C55 52.2091 53.2091 54 51 54H29C26.7909 54 25 52.2091 25 50V30Z" fill="white"/>
+                            <path d="M30 35H50M30 40H50M30 45H45" stroke="#1D7B81" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+                <h1 class="animated-title">Jejak Kuliah</h1>
+                <div class="subtitle">Aplikasi Manajemen Pembelajaran Mahasiswa</div>
+                <div class="subtitle-2">Full Stack Web Application</div>
+                <div class="tech-stack-preview">
+                    <span class="tech-pill">React</span>
+                    <span class="tech-pill">Laravel</span>
+                    <span class="tech-pill">MySQL</span>
+                </div>
+                <div class="creator">Created by Lukman Hakim</div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Overview -->
+        <div class="slide" data-slide="1">
+            <div class="content-slide">
+                <div class="slide-header">
+                    <h2 class="slide-title">🎯 Overview Aplikasi</h2>
+                    <p class="slide-description">
+                        Jejak Kuliah adalah aplikasi web untuk membantu mahasiswa mengelola dan mengorganisir 
+                        materi pembelajaran mereka secara terstruktur dan efisien.
+                    </p>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-box">
+                        <div class="feature-icon">📖</div>
+                        <h4>Learning Record</h4>
+                        <p>Kelola semester, mata kuliah, dan materi pembelajaran dengan struktur yang terorganisir</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">📚</div>
+                        <h4>Journal & Book</h4>
+                        <p>Simpan referensi buku dan jurnal akademik untuk mendukung pembelajaran</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">📄</div>
+                        <h4>Lecture Material</h4>
+                        <p>Organisir file materi kuliah per course dengan mudah dan cepat</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🎥</div>
+                        <h4>Learning Video</h4>
+                        <p>Kumpulkan dan akses video pembelajaran dari berbagai sumber</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Key Features -->
+        <div class="slide" data-slide="2">
+            <div class="content-slide">
+                <div class="slide-header">
+                    <h2 class="slide-title">✨ Fitur Utama</h2>
+                </div>
+                <div class="feature-grid">
+                    <div class="feature-box">
+                        <div class="feature-icon">🔐</div>
+                        <h4>Autentikasi User</h4>
+                        <p>Register & Login dengan JWT untuk keamanan data</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">📊</div>
+                        <h4>Dashboard Interaktif</h4>
+                        <p>Navigasi mudah dan intuitif untuk produktivitas maksimal</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🗂️</div>
+                        <h4>Manajemen Semester</h4>
+                        <p>Organisir per semester akademik dengan rapi</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">📁</div>
+                        <h4>Folder Structure</h4>
+                        <p>Materi terorganisir per course secara hierarkis</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">⬆️</div>
+                        <h4>File Upload</h4>
+                        <p>Upload PDF, PPT, DOC, XLS dengan mudah</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🔄</div>
+                        <h4>Multi-Device Sync</h4>
+                        <p>Akses dari mana saja, kapan saja</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">📱</div>
+                        <h4>Responsive Design</h4>
+                        <p>Optimal di mobile, tablet, dan desktop</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Fast Performance</h4>
+                        <p>Loading cepat dengan teknologi modern</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Frontend Tech -->
+        <div class="slide" data-slide="3">
+            <div class="content-slide">
+                <div class="slide-header">
+                    <h2 class="slide-title">💻 Frontend Development</h2>
+                </div>
+                <h3 class="section-title">Technology Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-badge">React 18</span>
+                    <span class="tech-badge">Vite</span>
+                    <span class="tech-badge">Tailwind CSS</span>
+                    <span class="tech-badge">Lucide Icons</span>
+                    <span class="tech-badge">JavaScript ES6+</span>
+                </div>
+                <h3 class="section-title">Key Features</h3>
+                <div class="feature-grid">
+                    <div class="feature-box">
+                        <div class="feature-icon">🎨</div>
+                        <h4>Modern UI/UX</h4>
+                        <p>Design clean dengan color scheme teal (#1D7B81)</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Fast Performance</h4>
+                        <p>Vite build tool untuk development cepat</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🔄</div>
+                        <h4>Real-time Updates</h4>
+                        <p>Optimistic UI updates untuk UX lebih baik</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">📦</div>
+                        <h4>Modular Components</h4>
+                        <p>Component-based architecture yang maintainable</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Screenshots Part 1 -->
+        <div class="slide" data-slide="4">
+            <div class="content-slide">
+                <div class="slide-header">
+                    <h2 class="slide-title">📸 Authentication Pages</h2>
+                </div>
+                <div class="screenshot-wrapper">
+                    <div class="screenshot-item">
+                        <div class="screenshot-container">
+                            <img src="images/SignInPage.png" alt="Sign In Page">
+                        </div>
+                        <p class="screenshot-description"><strong>Sign In Page</strong> - Login dengan JWT authentication</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="screenshot-container">
+                            <img src="images/RegisterPage.png" alt="Register Page">
+                        </div>
+                        <p class="screenshot-description"><strong>Register Page</strong> - Pendaftaran user baru</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Screenshots Part 2 -->
+        <div class="slide" data-slide="5">
+            <div class="content-slide">
+                <div class="slide-header">
+                    <h2 class="slide-title">📸 Dashboard & Learning Record</h2>
+                </div>
+                <div class="screenshot-wrapper">
+                    <div class="screenshot-item">
+                        <div class="screenshot-container">
+                            <img src="images/DashboardPage.png" alt="Dashboard Page">
+                        </div>
+                        <p class="screenshot-description"><strong>Dashboard Utama</strong> - Overview semua fitur aplikasi</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="screenshot-container">
+                            <img src="images/LearningRecordSemesterPage.png" alt="Learning Record Semester">
+                        </div>
+                        <p class="screenshot-description"><strong>Learning Record</strong> - Manajemen semester akademik</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Screenshots Part 3 -->
+        <div class="slide" data-slide="6">
+            <div class="content-slide">
+                <div class="slide-header">
+                    <h2 class="slide-title">📸 Courses & Materials</h2>
+                </div>
+                <div class="screenshot-wrapper">
+                    <div class="screenshot-item">
+                        <div class="screenshot-container">
+                            <img src="images/LearningRecordCoursesPage.png" alt="Courses Page">
+                        </div>
+                        <p class="screenshot-description"><strong>Courses Page</strong> - Daftar mata kuliah per semester</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="screenshot-container">
+                            <img src="images/LectureMaterialPage.png" alt="Lecture Material">
+                        </div>
+                        <p class="screenshot-description"><strong>Lecture Material</strong> - File materi kuliah</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Screenshots Part 4 -->
+        <div class="slide" data-slide="7">
+            <div class="content-slide">
+                <div class="slide-header">
+                    <h2 class="slide-title">📸 Content Pages</h2>
+                </div>
+                <div class="screenshot-wrapper">
+                    <div class="screenshot-item">
+                        <div class="screenshot-container">
+                            <img src="images/JournalAndBookPage.png" alt="Journal and Book">
+                        </div>
+                        <p class="screenshot-description"><strong>Journal & Book</strong> - Koleksi referensi akademik</p>
+                    </div>
+                    <div class="screenshot-item">
+                        <div class="screenshot-container">
+                            <img src="images/LearningVideoPage.png" alt="Learning Video">
+                        </div>
+                        <p class="screenshot-description"><strong>Learning Video</strong> - Video pembelajaran</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Screenshots Part 5 -->
+        <div class="slide" data-slide="8">
+            <div class="content-slide">
+                <div class="slide-header">
+                    <h2 class="slide-title">📸 Modal & Settings</h2>
+                </div>
+                <div class="screenshot-wrapper">
+                    <div class="screenshot-item">
+                        <div class="screenshot-container">
+                            <img src="images/AddSemesterPage.png" alt="Add Semester">
+                        </div>
+                        <p class="screenshot-description"><strong>Add Semester Modal</strong> - Form tambah semester baru</p>
+                    </div>
+
+                    <div class="screenshot-item">
+                        <div class="screenshot-container">
+                            <img src="images/AddCoursePage.png" alt="Add Course">
+                        </div>
+                        <p class="screenshot-description"><strong>Add Course Modal</strong> - Form tambah mata kuliah</p>
+                    </div>
+
+                    <div class="screenshot-item">
+                        <div class="screenshot-container">
+                            <img src="images/AddBookPage.png" alt="Add Book">
+                        </div>
+                        <p class="screenshot-description"><strong>Add Book Modal</strong> - Form tambah buku referensi</p>
+                    </div>
+
+                    <div class="screenshot-item">
+                        <div class="screenshot-container">
+                            <img src="images/AddJournalPage.png" alt="Add Journal">
+                        </div>
+                        <p class="screenshot-description"><strong>Add Journal Modal</strong> - Form tambah jurnal ilmiah</p>
+                    </div>
+
+                    <div class="screenshot-item">
+                        <div class="screenshot-container">
+                            <img src="images/AddVideoPage.png" alt="Add Video">
+                        </div>
+                        <p class="screenshot-description"><strong>Add Video Modal</strong> - Form tambah video pembelajaran</p>
+                    </div>
+
+                    <div class="screenshot-item">
+                        <div class="screenshot-container">
+                            <img src="images/SettingPage.png" alt="Settings Page">
+                        </div>
+                        <p class="screenshot-description"><strong>Settings Page</strong> - Pengaturan akun pengguna</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Backend -->
+        <div class="slide" data-slide="9">
+            <div class="content-slide">
+                <div class="slide-header">
+                    <h2 class="slide-title">⚙️ Backend Development</h2>
+                </div>
+                <h3 class="section-title">Technology Stack</h3>
+                <div class="tech-stack">
+                    <span class="tech-badge">Laravel 10</span>
+                    <span class="tech-badge">PHP 8.1+</span>
+                    <span class="tech-badge">MySQL</span>
+                    <span class="tech-badge">Laravel Sanctum</span>
+                    <span class="tech-badge">RESTful API</span>
+                </div>
+                <h3 class="section-title">Architecture Features</h3>
+                <div class="feature-grid">
+                    <div class="feature-box">
+                        <div class="feature-icon">🏗️</div>
+                        <h4>MVC Pattern</h4>
+                        <p>Model, Controller, Route terpisah dengan clean architecture</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🔌</div>
+                        <h4>RESTful API</h4>
+                        <p>Endpoint standar untuk CRUD operations yang konsisten</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">🔐</div>
+                        <h4>Authentication</h4>
+                        <p>JWT token dengan Laravel Sanctum untuk keamanan</p>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-icon">✨</div>
+                        <h4>Eloquent ORM</h4>
+                        <p>Database queries yang elegant dan readable</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Database -->
+        <div class="slide" data-slide="10">
+            <div class="content-slide">
+                <div class="slide-header">
+                    <h2 class="slide-title">🗄️ Database Structure</h2>
+                    <p class="slide-description">8 Tables dengan relasi yang terstruktur</p>
+                </div>
+                <div class="database-grid">
+                    <div class="db-table">
+                        <div class="table-icon">👤</div>
+                        <h4>Users</h4>
+                        <p>User authentication data dengan password hashing</p>
+                    </div>
+                    <div class="db-table">
+                        <div class="table-icon">📅</div>
+                        <h4>Semesters</h4>
+                        <p>Academic semester data per user</p>
+                    </div>
+                    <div class="db-table">
+                        <div class="table-icon">📚</div>
+                        <h4>Courses</h4>
+                        <p>Course information nested dalam semester</p>
+                    </div>
+                    <div class="db-table">
+                        <div class="table-icon">📄</div>
+                        <h4>Materials</h4>
+                        <p>Learning materials dengan file storage</p>
+                    </div>
+                    <div class="db-table">
+                        <div class="table-icon">📖</div>
+                        <h4>Books</h4>
+                        <p>Book references untuk pembelajaran</p>
+                    </div>
+                    <div class="db-table">
+                        <div class="table-icon">📰</div>
+                        <h4>Journals</h4>
+                        <p>Academic journals collection</p>
+                    </div>
+                    <div class="db-table">
+                        <div class="table-icon">🎥</div>
+                        <h4>Videos</h4>
+                        <p>Learning videos dari berbagai sumber</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12: Technical Highlights -->
+        <div class="slide" data-slide="11">
+            <div class="content-slide">
+                <div class="slide-header">
+                    <h2 class="slide-title">🚀 Technical Highlights</h2>
+                </div>
+                <div class="feature-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🔐</div>
+                        <h4>Security</h4>
+                        <ul>
+                            <li>JWT Authentication</li>
+                            <li>Password Hashing</li>
+                            <li>CORS Protection</li>
+                            <li>SQL Injection Safe</li>
+                        </ul>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">📱</div>
+                        <h4>Responsive</h4>
+                        <ul>
+                            <li>Mobile-first Design</li>
+                            <li>Tablet Optimized</li>
+                            <li>Desktop Ready</li>
+                            <li>Touch-friendly UI</li>
+                        </ul>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">⚡</div>
+                        <h4>Performance</h4>
+                        <ul>
+                            <li>Vite Build Tool</li>
+                            <li>Lazy Loading</li>
+                            <li>Optimistic UI</li>
+                            <li>Fast API Response</li>
+                        </ul>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">🎨</div>
+                        <h4>User Experience</h4>
+                        <ul>
+                            <li>Clean Interface</li>
+                            <li>Intuitive Navigation</li>
+                            <li>Smooth Animations</li>
+                            <li>Error Handling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 13: Thank You -->
+        <div class="slide" data-slide="12">
+            <div class="cover-slide">
+                <div class="logo-container">
+                    <div style="font-size: 5rem;">🎓</div>
+                </div>
+                <h1 class="animated-title">Terima Kasih!</h1>
+                <div class="subtitle">Jejak Kuliah</div>
+                <div class="subtitle-2">Aplikasi Manajemen Pembelajaran Mahasiswa</div>
+                <div class="tech-stack-preview">
+                    <span class="tech-pill">React + Laravel</span>
+                    <span class="tech-pill">Modern & Responsive</span>
+                    <span class="tech-pill">Full Stack Web App</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="bottom-nav">
+        <button class="nav-btn" id="prevBtn">◀ Prev</button>
+        <div class="progress-dots" id="dotsContainer"></div>
+        <button class="nav-btn" id="nextBtn">Next ▶</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
