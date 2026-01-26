@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jejak Kuliah - Presentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Particles Background -->
+    <div class="particles-bg" id="particles"></div>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    
+    <!-- Floating Navigation -->
+    <nav class="floating-nav" id="floatingNav">
+        <div class="nav-brand">Jejak Kuliah</div>
+        <button class="mobile-toggle" id="mobileToggle">☰</button>
+        <div class="nav-menu" id="navMenu">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#overview" class="nav-link">Overview</a>
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#tech" class="nav-link">Tech Stack</a>
+            <a href="#screenshots" class="nav-link">Screenshots</a>
+            <a href="#backend" class="nav-link">Backend</a>
+        </div>
+    </nav>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn">↑</button>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="logo-animation">
+                    <svg width="100" height="100" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="80" height="80" rx="16" fill="#1D7B81"/>
+                        <path d="M25 30C25 27.7909 26.7909 26 29 26H51C53.2091 26 55 27.7909 55 30V50C55 52.2091 53.2091 54 51 54H29C26.7909 54 25 52.2091 25 50V30Z" fill="white"/>
+                        <path d="M30 35H50M30 40H50M30 45H45" stroke="#1D7B81" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h1 class="hero-title">Jejak Kuliah</h1>
+                <p class="hero-subtitle">Aplikasi Manajemen Pembelajaran Mahasiswa</p>
+                <p class="hero-description">Full Stack Web Application</p>
+                <div class="hero-badges">
+                    <span class="badge">React</span>
+                    <span class="badge">Laravel</span>
+                    <span class="badge">MySQL</span>
+                </div>
+                <p class="hero-creator">Created by Lukman Hakim</p>
+                <a href="#overview" class="scroll-down">
+                    <span>Scroll Down</span>
+                    <span class="arrow">↓</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section id="overview" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">🎯 Overview Aplikasi</h2>
+                    <p class="section-desc">Jejak Kuliah adalah aplikasi web untuk membantu mahasiswa mengelola dan mengorganisir materi pembelajaran mereka secara terstruktur dan efisien.</p>
+                </div>
+                <div class="grid-4">
+                    <div class="card">
+                        <div class="card-icon">📖</div>
+                        <h3 class="card-title">Learning Record</h3>
+                        <p class="card-text">Kelola semester, mata kuliah, dan materi pembelajaran dengan struktur yang terorganisir</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📚</div>
+                        <h3 class="card-title">Journal & Book</h3>
+                        <p class="card-text">Simpan referensi buku dan jurnal akademik untuk mendukung pembelajaran</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📄</div>
+                        <h3 class="card-title">Lecture Material</h3>
+                        <p class="card-text">Organisir file materi kuliah per course dengan mudah dan cepat</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎥</div>
+                        <h3 class="card-title">Learning Video</h3>
+                        <p class="card-text">Kumpulkan dan akses video pembelajaran dari berbagai sumber</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">✨ Fitur Utama</h2>
+                </div>
+                <div class="grid-4">
+                    <div class="card">
+                        <div class="card-icon">🔐</div>
+                        <h3 class="card-title">Autentikasi User</h3>
+                        <p class="card-text">Register & Login dengan JWT untuk keamanan data</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📊</div>
+                        <h3 class="card-title">Dashboard Interaktif</h3>
+                        <p class="card-text">Navigasi mudah dan intuitif untuk produktivitas maksimal</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🗂️</div>
+                        <h3 class="card-title">Manajemen Semester</h3>
+                        <p class="card-text">Organisir per semester akademik dengan rapi</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📁</div>
+                        <h3 class="card-title">Folder Structure</h3>
+                        <p class="card-text">Materi terorganisir per course secara hierarkis</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">⬆️</div>
+                        <h3 class="card-title">File Upload</h3>
+                        <p class="card-text">Upload PDF, PPT, DOC, XLS dengan mudah</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🔄</div>
+                        <h3 class="card-title">Multi-Device Sync</h3>
+                        <p class="card-text">Akses dari mana saja, kapan saja</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📱</div>
+                        <h3 class="card-title">Responsive Design</h3>
+                        <p class="card-text">Optimal di mobile, tablet, dan desktop</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">⚡</div>
+                        <h3 class="card-title">Fast Performance</h3>
+                        <p class="card-text">Loading cepat dengan teknologi modern</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Section -->
+        <section id="tech" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">💻 Technology Stack</h2>
+                </div>
+                
+                <div class="tech-group">
+                    <h3 class="tech-group-title">Frontend</h3>
+                    <div class="tech-badges">
+                        <span class="tech-badge">React 18</span>
+                        <span class="tech-badge">Vite</span>
+                        <span class="tech-badge">Tailwind CSS</span>
+                        <span class="tech-badge">Lucide Icons</span>
+                        <span class="tech-badge">JavaScript ES6+</span>
+                    </div>
+                    <div class="grid-4">
+                        <div class="card">
+                            <div class="card-icon">🎨</div>
+                            <h3 class="card-title">Modern UI/UX</h3>
+                            <p class="card-text">Design clean dengan color scheme teal (#1D7B81)</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">⚡</div>
+                            <h3 class="card-title">Fast Performance</h3>
+                            <p class="card-text">Vite build tool untuk development cepat</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">🔄</div>
+                            <h3 class="card-title">Real-time Updates</h3>
+                            <p class="card-text">Optimistic UI updates untuk UX lebih baik</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">📦</div>
+                            <h3 class="card-title">Modular Components</h3>
+                            <p class="card-text">Component-based architecture yang maintainable</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-group">
+                    <h3 class="tech-group-title">Backend</h3>
+                    <div class="tech-badges">
+                        <span class="tech-badge">Laravel 10</span>
+                        <span class="tech-badge">PHP 8.1+</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">Laravel Sanctum</span>
+                        <span class="tech-badge">RESTful API</span>
+                    </div>
+                    <div class="grid-4">
+                        <div class="card">
+                            <div class="card-icon">🏗️</div>
+                            <h3 class="card-title">MVC Pattern</h3>
+                            <p class="card-text">Model, Controller, Route terpisah dengan clean architecture</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">🔌</div>
+                            <h3 class="card-title">RESTful API</h3>
+                            <p class="card-text">Endpoint standar untuk CRUD operations yang konsisten</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">🔐</div>
+                            <h3 class="card-title">Authentication</h3>
+                            <p class="card-text">JWT token dengan Laravel Sanctum untuk keamanan</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">✨</div>
+                            <h3 class="card-title">Eloquent ORM</h3>
+                            <p class="card-text">Database queries yang elegant dan readable</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshots Section -->
+        <section id="screenshots" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">📸 Application Screenshots</h2>
+                </div>
+
+                <div class="screenshot-category">
+                    <h3 class="category-title">Authentication</h3>
+                    <div class="screenshot-grid">
+                        <div class="screenshot-item">
+                            <img src="images/SignInPage.png" alt="Sign In">
+                            <p class="screenshot-label">Sign In Page</p>
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="images/RegisterPage.png" alt="Register">
+                            <p class="screenshot-label">Register Page</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="screenshot-category">
+                    <h3 class="category-title">Dashboard & Learning Record</h3>
+                    <div class="screenshot-grid">
+                        <div class="screenshot-item">
+                            <img src="images/DashboardPage.png" alt="Dashboard">
+                            <p class="screenshot-label">Dashboard</p>
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="images/LearningRecordSemesterPage.png" alt="Semester">
+                            <p class="screenshot-label">Learning Record</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="screenshot-category">
+                    <h3 class="category-title">Courses & Materials</h3>
+                    <div class="screenshot-grid">
+                        <div class="screenshot-item">
+                            <img src="images/LearningRecordCoursesPage.png" alt="Courses">
+                            <p class="screenshot-label">Courses Page</p>
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="images/LectureMaterialPage.png" alt="Material">
+                            <p class="screenshot-label">Lecture Material</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="screenshot-category">
+                    <h3 class="category-title">Content Management</h3>
+                    <div class="screenshot-grid">
+                        <div class="screenshot-item">
+                            <img src="images/JournalAndBookPage.png" alt="Journal">
+                            <p class="screenshot-label">Journal & Book</p>
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="images/LearningVideoPage.png" alt="Video">
+                            <p class="screenshot-label">Learning Video</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="screenshot-category">
+                    <h3 class="category-title">Forms & Settings</h3>
+                    <div class="screenshot-grid-small">
+                        <div class="screenshot-item">
+                            <img src="images/AddSemesterPage.png" alt="Add Semester">
+                            <p class="screenshot-label">Add Semester</p>
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="images/AddCoursePage.png" alt="Add Course">
+                            <p class="screenshot-label">Add Course</p>
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="images/AddBookPage.png" alt="Add Book">
+                            <p class="screenshot-label">Add Book</p>
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="images/AddJournalPage.png" alt="Add Journal">
+                            <p class="screenshot-label">Add Journal</p>
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="images/AddVideoPage.png" alt="Add Video">
+                            <p class="screenshot-label">Add Video</p>
+                        </div>
+                        <div class="screenshot-item">
+                            <img src="images/SettingPage.png" alt="Settings">
+                            <p class="screenshot-label">Settings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Backend Section -->
+        <section id="backend" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">🗄️ Database & Highlights</h2>
+                </div>
+
+                <h3 class="tech-group-title">Database Structure</h3>
+                <p class="section-desc">8 Tables dengan relasi yang terstruktur</p>
+                <div class="grid-4">
+                    <div class="card">
+                        <div class="card-icon">👤</div>
+                        <h3 class="card-title">Users</h3>
+                        <p class="card-text">User authentication data dengan password hashing</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📅</div>
+                        <h3 class="card-title">Semesters</h3>
+                        <p class="card-text">Academic semester data per user</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📚</div>
+                        <h3 class="card-title">Courses</h3>
+                        <p class="card-text">Course information nested dalam semester</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📄</div>
+                        <h3 class="card-title">Materials</h3>
+                        <p class="card-text">Learning materials dengan file storage</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📖</div>
+                        <h3 class="card-title">Books</h3>
+                        <p class="card-text">Book references untuk pembelajaran</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📰</div>
+                        <h3 class="card-title">Journals</h3>
+                        <p class="card-text">Academic journals collection</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎥</div>
+                        <h3 class="card-title">Videos</h3>
+                        <p class="card-text">Learning videos dari berbagai sumber</p>
+                    </div>
+                </div>
+
+                <h3 class="tech-group-title" style="margin-top: 4rem;">Technical Highlights</h3>
+                <div class="grid-4">
+                    <div class="highlight-card">
+                        <div class="card-icon">🔐</div>
+                        <h3 class="card-title">Security</h3>
+                        <ul class="feature-list">
+                            <li>JWT Authentication</li>
+                            <li>Password Hashing</li>
+                            <li>CORS Protection</li>
+                            <li>SQL Injection Safe</li>
+                        </ul>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="card-icon">📱</div>
+                        <h3 class="card-title">Responsive</h3>
+                        <ul class="feature-list">
+                            <li>Mobile-first Design</li>
+                            <li>Tablet Optimized</li>
+                            <li>Desktop Ready</li>
+                            <li>Touch-friendly UI</li>
+                        </ul>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="card-icon">⚡</div>
+                        <h3 class="card-title">Performance</h3>
+                        <ul class="feature-list">
+                            <li>Vite Build Tool</li>
+                            <li>Lazy Loading</li>
+                            <li>Optimistic UI</li>
+                            <li>Fast API Response</li>
+                        </ul>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="card-icon">🎨</div>
+                        <h3 class="card-title">User Experience</h3>
+                        <ul class="feature-list">
+                            <li>Clean Interface</li>
+                            <li>Intuitive Navigation</li>
+                            <li>Smooth Animations</li>
+                            <li>Error Handling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section class="footer-section">
+            <div class="footer-container">
+                <div class="footer-logo">🎓</div>
+                <h2 class="footer-title">Terima Kasih!</h2>
+                <p class="footer-subtitle">Jejak Kuliah</p>
+                <p class="footer-desc">Aplikasi Manajemen Pembelajaran Mahasiswa</p>
+                <div class="footer-badges">
+                    <span class="badge">React + Laravel</span>
+                    <span class="badge">Modern & Responsive</span>
+                    <span class="badge">Full Stack Web App</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
